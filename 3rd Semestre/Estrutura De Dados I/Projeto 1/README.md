@@ -45,5 +45,6 @@ Run the main class:
 
 ## Authors
 Thais Ferreira Canguçu
+
 Pedro Moniz Canto
 
