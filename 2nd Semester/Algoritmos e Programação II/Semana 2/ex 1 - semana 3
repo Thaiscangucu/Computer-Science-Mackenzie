@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main()
+{
+int dado;
+srand(time(NULL)); // inicializa gerador randômico
+dado = rand()%6 + 1; // gera valor de 1 a 6
+printf("Lancei o dado! Tente adivinhar o seu valor...In");
+printf ("Seu palpite: ");
+int palpite;
+scanf("%d", &palpite);
+if (palpite == dado)
+    {
+        printf ("Você adivinhou! (n");
+    }
+else
+    {
+        printf ("Não foi desta vez...(n");
+    }
+printf("valor do dado lançado: %d\n", dado);
+
+return 0;
+}

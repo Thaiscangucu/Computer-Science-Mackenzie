@@ -1,0 +1,2 @@
+INDEX VERSION 1.134+/Users/tatacangucu/Desktop/Faculdade/3˚ Semestre/Estrutura De Dados I/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
