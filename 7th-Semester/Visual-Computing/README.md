@@ -63,3 +63,22 @@ Um detalhe curioso é que a técnica tem limitações bem visíveis: superfície
 * 🎥 **Vídeo explicativo:** [O que é Fotogrametria? (YouTube)](https://www.youtube.com/results?search_query=fotogrametria+como+funciona+modelo+3D)
 
 ---
+
+## 7. A História e o Funcionamento da Compressão de Imagens JPEG
+
+O **JPEG** é o formato de imagem mais usado no mundo, presente em câmeras digitais, celulares e na maior parte das fotos da internet. O nome vem do *Joint Photographic Experts Group*, comitê criado em 1986 para definir um padrão de compressão de fotografias. O padrão foi publicado em 1992. Sua grande sacada é ser uma compressão **com perdas** (*lossy*): ele descarta informações que o olho humano dificilmente percebe, reduzindo o tamanho do arquivo em até 10 vezes sem perda visível de qualidade.
+
+O processo explora as limitações da nossa visão em algumas etapas:
+
+1. **Conversão de cor (RGB → YCbCr):** a imagem é separada em **luminância** (brilho, Y) e **crominância** (cor, Cb e Cr). Nossos olhos são muito mais sensíveis a variações de brilho do que de cor.
+2. **Subamostragem de crominância:** aproveitando essa característica, os canais de cor são armazenados em resolução menor (por exemplo, metade da largura e da altura), quase sem diferença perceptível.
+3. **Divisão em blocos 8×8 e DCT:** a imagem é dividida em blocos de 8×8 pixels, e cada bloco passa pela **Transformada Discreta do Cosseno (DCT)**. A DCT reescreve o bloco como uma soma de padrões de frequência, das variações suaves às mais finas.
+4. **Quantização:** esta é a etapa onde ocorre a perda. As altas frequências (detalhes finos que mal enxergamos) são arredondadas de forma agressiva, e muitas viram zero. O controle de "qualidade" ao salvar um JPEG ajusta justamente essa etapa.
+5. **Codificação de entropia:** os coeficientes são lidos em **zigue-zague**, agrupando os zeros, e comprimidos sem perdas com *run-length* e **codificação de Huffman**.
+
+Quando a compressão é exagerada, surgem os famosos **artefatos de compressão**. Os blocos 8×8 ficam visíveis (*blocking*) e aparecem "fantasmas" ao redor de bordas nítidas (*ringing*). Por isso o JPEG funciona mal com textos, logos e desenhos com traços definidos, para os quais o **PNG** é mais indicado. Formatos mais modernos, como **WebP**, **AVIF** e **JPEG XL**, buscam a mesma qualidade com arquivos ainda menores.
+
+* 📖 **Leitura:** [Artigo sobre JPEG (Wikipédia)](https://pt.wikipedia.org/wiki/JPEG)
+* 🎥 **Vídeo explicativo:** [Como funciona a compressão JPEG? (YouTube)](https://www.youtube.com/results?search_query=como+funciona+compress%C3%A3o+jpeg+dct)
+
+---
