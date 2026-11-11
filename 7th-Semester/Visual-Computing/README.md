@@ -82,3 +82,18 @@ Quando a compressão é exagerada, surgem os famosos **artefatos de compressão*
 * 🎥 **Vídeo explicativo:** [Como funciona a compressão JPEG? (YouTube)](https://www.youtube.com/results?search_query=como+funciona+compress%C3%A3o+jpeg+dct)
 
 ---
+
+## 8. Post final 
+Comecei achando que imagem era só uma foto. Hoje vejo uma matriz de pixels que dá pra transformar.
+
+Aprendi como a imagem digital é formada do que é formada, com amostragem e quantização. Depois aprendemos a mexer no brilho e no contraste com as transformações de intensidade e o histograma. Também usamos filtros pra tirar ruído ou realçar detalhes, detectamos bordas e entendemos como a interpolação cria pixels novos quando a imagem muda de tamanho. Além disso vimos como Transformada de Fourier mostrou que uma imagem também pode ser vista como um conjunto de frequências.
+
+O mais legal foi ver como tudo se conecta e poder olhar uma imagem digital de uma forma nova. 
+
+
+
+
+
+
+
+
